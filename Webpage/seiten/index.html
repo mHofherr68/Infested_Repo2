@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title> Infested </title>
+    <link rel="icon" href="../medien/bilder/Infested Logo.svg" />
+    <link rel="stylesheet" href="../gestalt/index_style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Tutorial angesehen -->
+    <div id="curtainMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+        <div class="overlay-content">
+            <a href="Spiel.html">SPIEL</a>
+            <a href="Story.html">STORY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="News.html">NEWS</a>
+            <a href="Support.html">SUPPORT</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-text">
+            <h2 class="game-title">INFESTED</h2>
+            <h1>Kämpfe, gegen Plagen um deine Flucht zu versichern</h1>
+            <p>Begib dich in INFESTED auf ein futuristisches otherworldly 
+               Abenteuer mit deiner eigenen KI Assistentin und deiner einzig 
+               waren super bekämpfungswaffe gegen die Insekten, das 
+               „INSEKTEN SPRAY“...</p>
+            <p>okay es klingt jetzt nicht so toll aber vertrau.</p>
+            <a href="story.html" class="mehr-erfahren-btn">Mehr erfahren</a>
+        </div>
+    </header>
+    
+	<nav id="Hauptnavigation">
+		<a href="index.html" class="logo">
+			<img src="../medien/bilder/Infested Logo.svg" alt="Infested Logo">
+		</a>
+		<!-- Tutorial angesehen -->
+        <span class="menu-toggle" onclick="openCurtain()">&#9776;</span>
+
+		<ul>
+			<li><a href="Spiel.html">SPIEL</a></li>
+			<li><a href="Story.html">STORY</a></li>
+			<li><a href="Shop.html">SHOP</a></li>
+			<li><a href="News.html">NEWS</a></li>
+			<li><a href="Support.html">SUPPORT</a></li>
+		</ul>
+
+		<div class="mode-toggle">
+		  <span class="mode-text">Night Mode</span>
+		  <div class="mode-switch">
+			<span class="mode-icon">🌙</span>
+		  </div>
+		</div>
+	</nav>
+
+    <main>
+        <div class="thumbnails">
+            <img src="../medien/bilder/Gamepic.png" alt="Planet 1" data-index="0">
+            <img src="../medien/bilder/Gamepic2.png" alt="Planet 2" data-index="1">
+            <img src="../medien/bilder/Gamepic3.png" alt="Planet 3" data-index="2">
+            <img src="../medien/bilder/Gamepic4.png" alt="Planet 4" data-index="3">
+        </div>
+
+        <div class="trailer-text">GAME TRAILER</div>
+		
+        <div class="trailer-container">
+            <video controls>
+                <source src="../medien/av/Planet.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <section class="features-section">
+            <h2>Features</h2>
+            <div class="feature-container">
+
+                <div class="feature-block">
+                    <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="feature-title">GROßE STORY-LINE</div>
+                    <div class="feature-description">
+                        Erkunde spannende Level mit vielen Herausforderungen und Geheimnissen!
+                    </div>
+                </div>
+
+                <div class="feature-block">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="feature-title">COOLE WAFFEN</div>
+                    <div class="feature-description">
+                        Sammle einzigartige Waffen, um stärker zu werden und Gegner zu besiegen!
+                    </div>
+                </div>
+
+                <div class="feature-block">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <div class="feature-title">VERSCHIEDENE SCHWIERIGKEITEN</div>
+                    <div class="feature-description">
+                        Spiele einfach und erlebe die Story oder mach dir eine größere Herausforderung auf deinem Weg!
+                    </div>
+                </div>
+
+                <div class="feature-block">
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="feature-title">ERKUNDE DIE KOLLONIE</div>
+                    <div class="feature-description">
+                        Dursuche die Kolonie auf einen neuen Planeten und erfahre all mögliche Geheimnisse!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infested | <a href="Support.html">Impressum</a> | <a href="Support.html">Datenschutz</a></p>
+    </footer>
+
+    <script>
+        const bilder = ["../medien/bilder/Gamepic.png","../medien/bilder/Gamepic2.png","../medien/bilder/Gamepic3.png","../medien/bilder/Gamepic4.png"];
+        let index = 0;
+        const header = document.querySelector("header");
+        const thumbs = document.querySelectorAll(".thumbnails img");
+        function changeHeader(idx) {
+            index = idx;
+            header.style.backgroundImage = `url('${bilder[index]}')`;
+            thumbs.forEach((thumb, i) => thumb.classList.toggle("active", i === index));
+        }
+        thumbs.forEach((thumb, i) => { thumb.addEventListener("click", () => changeHeader(i)); });
+        setInterval(() => { index = (index + 1) % bilder.length; changeHeader(index); }, 5000);
+        changeHeader(0);
+		
+		/* Tutorial angesehen */
+        const featureBlocks = document.querySelectorAll('.feature-block');
+        function checkVisibility() {
+            const triggerBottom = window.innerHeight * 0.9;
+            featureBlocks.forEach(block => {
+                const blockTop = block.getBoundingClientRect().top;
+                if (blockTop < triggerBottom) block.classList.add('visible');
+            });
+        }
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+
+		/* Tutorial angesehen */
+        const modeToggle = document.querySelector(".mode-toggle");
+        const modeText = document.querySelector(".mode-text");
+        const modeIcon = document.querySelector(".mode-icon");
+        const moonIcon = "../medien/icons/mond.svg";
+        const sunIcon = "../medien/icons/sonne.svg";
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            modeText.textContent = "Day Mode";
+            modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+        } else {
+            modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+        }
+        modeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+            if (document.body.classList.contains("light-mode")) {
+                modeText.textContent = "Day Mode";
+                modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+                localStorage.setItem("theme", "light");
+            } else {
+                modeText.textContent = "Night Mode";
+                modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+                localStorage.setItem("theme", "dark");
+            }
+        });
+
+        function openCurtain() { document.getElementById("curtainMenu").style.width = "100%"; }
+        function closeCurtain() { document.getElementById("curtainMenu").style.width = "0%"; }
+    </script>
+</body>
+</html>

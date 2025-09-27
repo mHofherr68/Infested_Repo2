@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 0a1cf54f042628b49a372d73a117b692
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HopeBASE
+    second: {fileID: 2100000, guid: 93fba37e17122e646a3536f76020b958, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HopeBuilding
+    second: {fileID: 2100000, guid: fb82186806a00a0479c4b7a4e74e82eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LichtRakete
+    second: {fileID: 2100000, guid: 918ae0004b542474aadd069b686d01e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rakete
+    second: {fileID: 2100000, guid: e7e8d47baf9eea84891379437f908f9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RaketeDoor
+    second: {fileID: 2100000, guid: f4fc1620876a3164cab0d002d83eb5df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RaketeFENSTER
+    second: {fileID: 2100000, guid: c7d5c07c2166a15438b82244015f5dee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SicherunLIGHT
+    second: {fileID: 2100000, guid: c54c9055cb5a1024f9478f98cf099d6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sicherung
+    second: {fileID: 2100000, guid: 222d28ab2b3033c4ab3e1a81c505099b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sicherung.001
+    second: {fileID: 2100000, guid: 0a58f8146e2a8b043a46be66b1805c36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sicherung.002
+    second: {fileID: 2100000, guid: 43ed95db8cc4e42418cb83222652c25b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SicherungKasten
+    second: {fileID: 2100000, guid: 62c430ee38aef364f992275490fa64f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartKasten
+    second: {fileID: 2100000, guid: a5f98618910374b4591c512aa9dd2d00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartKnopf
+    second: {fileID: 2100000, guid: dc20f439d90307a44ae67d03d1a08fd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: displayStartKasten
+    second: {fileID: 2100000, guid: 63b432c3f7ebb18419c46fcb0a7894e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light
+    second: {fileID: 2100000, guid: 8882ab2697b3fe541b071b8658cd167b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBUILDINGglb_HopeBuilding_BaseColor
+    second: {fileID: 2800000, guid: bbc9fdf3704cf554c8d13cbb1eb999e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBUILDINGglb_HopeBuilding_Metallic
+    second: {fileID: 2800000, guid: 6d845bf5dc41b6c45af4f66b7f1dab3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBUILDINGglb_HopeBuilding_Normal
+    second: {fileID: 2800000, guid: 537029a96d6176b4e9120a7f5c534cbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBase_HopeBASE_BaseColor
+    second: {fileID: 2800000, guid: b575db78e76e90449bd4d797b82b662c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBase_HopeBASE_Metallic
+    second: {fileID: 2800000, guid: 995b182b89d8ca144859d80368837793, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HopeBase_HopeBASE_Normal
+    second: {fileID: 2800000, guid: 9695cf4e27657c247bdefc9c752461d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RaketeWINDOW_RaketeFENSTER_BaseColor
+    second: {fileID: 2800000, guid: 58f8f34d1114e264aaa16cbc290e3e72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RaketeWINDOW_RaketeFENSTER_Normal
+    second: {fileID: 2800000, guid: 7d5c4bf8170b78d46a0c8cbe071b75ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rakete_Rakete_BaseColor
+    second: {fileID: 2800000, guid: b26f6d16ba7a2c14da19eb6985dc0068, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rakete_Rakete_Metallic
+    second: {fileID: 2800000, guid: 6e98ab7cc414bff4c86e4fffa9522045, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rakete_Rakete_Normal
+    second: {fileID: 2800000, guid: 5bbffbd4b2b62f241aaf5489b07fef84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Raketedoor_RaketeDoor_BaseColor
+    second: {fileID: 2800000, guid: e34b628a53722d54b987cd07e5b9da5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Raketedoor_RaketeDoor_Metallic
+    second: {fileID: 2800000, guid: cc801741033b1c84e8ad4e4536dd6e0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SicherungKasten_SicherungKasten_BaseColor
+    second: {fileID: 2800000, guid: 9a5b9db20d7936e48ab071007a6766f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SicherungKasten_SicherungKasten_Metallic
+    second: {fileID: 2800000, guid: 0c80601319e90b449879d0708b1523b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SicherungKasten_SicherungKasten_Normal
+    second: {fileID: 2800000, guid: 295c9c1b53f545b42a62262002fe59e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sicherung_Sicherung_BaseColor
+    second: {fileID: 2800000, guid: 8c8f5c91f85e25d47a8785d752e0bc08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sicherung_Sicherung_Emissive
+    second: {fileID: 2800000, guid: 7674462ed6e1ca7448495983212055f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sicherung_Sicherung_Metallic
+    second: {fileID: 2800000, guid: 1572209bcf480b94dbe352a848b43953, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sicherung_Sicherung_Normal
+    second: {fileID: 2800000, guid: d9e31cc4dcbd3204d85fe32b15e8aae6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: startKasten_StartKasten_BaseColor
+    second: {fileID: 2800000, guid: 8c135a1c43799e341aa37de8068c60d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: startKasten_StartKasten_Metallic
+    second: {fileID: 2800000, guid: 077cf0b8828e9ca45b4d32cea6347c19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: startKasten_StartKasten_Normal
+    second: {fileID: 2800000, guid: e7a61de95ed5b2d4b9b02572d09404cc, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

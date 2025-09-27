@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: f51323ebd162adf4a8fbddf88b38ef01
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Antenna1
+    second: {fileID: 2100000, guid: 425539930d9edc843b6c925e066c4798, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Antenna2
+    second: {fileID: 2100000, guid: af9d820c736b4854b905f946c953303b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Auge1
+    second: {fileID: 2100000, guid: 00220c10bbb8f3041ae0994cec373fda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Auge2
+    second: {fileID: 2100000, guid: f340b2c4659206045a4128b358a0cfeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BodyInsekt
+    second: {fileID: 2100000, guid: e0cc3acfa0dbc424390f78406522d130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Foot
+    second: {fileID: 2100000, guid: 800c4d996dcccc84f94eb67e2b23aef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 07de39cc4d9d181448e87a143d55bf83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 71f6571fcaada3a4c95993fb7f4151ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: f1909e97f631e69438492df9aa214a07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 48274dcf1af3bc34eaebe70bc0830c0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: db45d700a03e0c940b82076cfe5847f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: bf13c7758bbeea44ab73d498c544122b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 777926e3c76720a4bb86b05c907cca63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wandteil1
+    second: {fileID: 2100000, guid: 0841cd2d2c6017046957f153f450f251, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wings
+    second: {fileID: 2100000, guid: d8af26a861c286a47a22a31b05bb5fc2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BodenSciFi_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: a4a5415ed69992c46bd702a01956bb24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BodenSciFi_DefaultMaterial_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 08259721dfcec944a96685753a6d0c31, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dachteil1_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: e8e046ccb6f8e9d4fa0c4df364001316, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dachteil1_DefaultMaterial_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 38af3d05a176998419c1f2ccc65912c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dachteil2_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: ff9ab20993665f842a27c4b21ec7d793, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dachteil2_DefaultMaterial_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 59b9f8af21c03b041b5dae7d591a0a4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dachteil3_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: 725dfa26ff4cab24bb0dc1ddaa491462, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HabitatRaum_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: 5c655788645a42448845dd564b3a41d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HabitatRaum_DefaultMaterial_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: b499bb24575f1de4fad7e253e021fe0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_ BodyInsekt_BaseColor
+    second: {fileID: 2800000, guid: e4088a7c1ee7c3e4bb2f8d1c562b12fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_ BodyInsekt_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: b96fb904dc901aa4db4843814aff49d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Antenna1_BaseColor
+    second: {fileID: 2800000, guid: b7539c7b3d10cd747ab8ae1cff00a386, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Antenna2_BaseColor
+    second: {fileID: 2800000, guid: 42de327dd81f1e64ba3df818dc4bd2d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Antenna2_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: e9ff860ded4a9ca4b829101361f297bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Auge1_BaseColor
+    second: {fileID: 2800000, guid: 299c1e84d84da3c4d8067b00e9524ad2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Auge1_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 2dd291dd2cb961f49b6e44fa82c2ef7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Auge2_BaseColor
+    second: {fileID: 2800000, guid: 187a2971dde09f240baa72e3221e7d89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Auge2_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: b78f9b8be62273248852f71c90ea2d91, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Foot_BaseColor
+    second: {fileID: 2800000, guid: cf7f1640a2466aa49ab60faf8e6d72f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Foot_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: e6075533263453a4a804b8078220c95a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Wings_BaseColor
+    second: {fileID: 2800000, guid: 8f4c616c4466670428f018d2314c13e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: InsektohneTexture_Wings_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: cee528510002e6541bc61272d629818c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "T\xFCrSciFi_DefaultMaterial_BaseColor"
+    second: {fileID: 2800000, guid: 34a167158d0a8c44692029ef89b92c3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "T\xFCrSciFi_DefaultMaterial_Normal_DirectX_OpenGl"
+    second: {fileID: 2800000, guid: fca73aff871fc224a861d6947d63692e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wandteil1_Scifi_Wand_BaseColor
+    second: {fileID: 2800000, guid: c31517f718f6e624cb0d1f67b53c9ac0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wandteil1_Scifi_Wand_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 690822baf36804b409fcc0258b46302e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wandteil2_DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: c378b9cdac37bd445b82bf9747c2be72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wandteil2_DefaultMaterial_Normal_DirectX_OpenGl
+    second: {fileID: 2800000, guid: 2c43f4fb0bcd6ae4a922ffd132c7ebc3, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

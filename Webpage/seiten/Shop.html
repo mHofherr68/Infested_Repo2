@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFESTED - Shop</title>
+    <link rel="icon" href="../medien/bilder/Infested Logo.svg">
+    <link rel="stylesheet" href="../gestalt/spiel_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="shop-page">
+	<!-- Tutorial angesehen -->
+	<div id="curtainMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+        <div class="overlay-content">
+            <a href="Spiel.html">SPIEL</a>
+            <a href="Story.html">STORY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="News.html">NEWS</a>
+            <a href="Support.html">SUPPORT</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-text">
+            <h2 class="game-title">SHOP</h2>
+            <h1>Hol dir dein Infested-Erlebnis nach Hause!</h1>
+        </div>
+    </header>
+
+    <nav id="Hauptnavigation">
+        <a href="index.html" class="logo">
+            <img src="../medien/bilder/Infested Logo.svg" alt="Infested Logo">
+        </a>
+		<!-- Tutorial angesehen -->
+		<span class="menu-toggle" onclick="openCurtain()">&#9776;</span>
+		
+        <ul>
+            <li><a href="spiel.html">SPIEL</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+        </ul>
+        <div class="mode-toggle">
+            <span class="mode-text">Nachtmodus</span>
+            <div class="mode-switch">
+                <span class="mode-icon">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="feature-screenshots-section">
+			<div class="feature-item">
+				<div class="feature-text">
+					<h2>Produkte</h2>
+				</div>
+				<div class="modal-product-grid">
+					<div class="modal-product-card">
+						<img src="../medien/bilder/black hoodie.png" alt="Infested Hoodie">
+						<h3>Infested Hoodie</h3>
+						<p>Bequem und stylisch mit Game-Logo.</p>
+						<button class="buy-btn" data-product="hoodie">Jetzt kaufen</button>
+					</div>
+					<div class="modal-product-card">
+						<img src="../medien/bilder/black shirt.png" alt="Infested T-Shirt">
+						<h3>Infested T-Shirt</h3>
+						<p>Coole Designs für Fans.</p>
+						<button class="buy-btn" data-product="tshirt">Jetzt kaufen</button>
+					</div>
+					<div class="modal-product-card">
+						<img src="../medien/bilder/tassen.png" alt="Infested Tassen">
+						<h3>Infested Tasse</h3>
+						<p>Trink Kaffee aus deiner eigenen Infested Tasse.</p>
+						<button class="buy-btn" data-product="mug">Jetzt kaufen</button>
+					</div>
+					<div class="modal-product-card">
+						<img src="../medien/bilder/schlüsselanhänger.png" alt="Infested Schlüsselanhänger">
+						<h3>Infested Schlüsselanhänger</h3>
+						<p>Hab Infested immer bei dir.</p>
+						<button class="buy-btn" data-product="keychain">Jetzt kaufen</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infested | <a href="Support.html">Impressum</a> | <a href="Support.html">Datenschutz</a></p>
+    </footer>
+	
+	<div id="buyModal" class="modal">
+	  <div class="modal-content">
+		<span class="close-modal">&times;</span>
+		<h2 id="modalTitle">Variante auswählen</h2>
+
+		<img id="modalProductImage" src="" alt="Produktbild" style="width:100%;border-radius:12px;margin-bottom:1rem;">
+
+		<div id="variantOptions"></div>
+
+		<button id="confirmBuy" class="buy-btn">Kaufen</button>
+	  </div>
+	</div>
+
+    <script>
+		/* Tutorial angesehen */
+        const modeToggle = document.querySelector(".mode-toggle");
+        const modeText = document.querySelector(".mode-text");
+        const modeIcon = document.querySelector(".mode-icon");
+
+        const moonIcon = "../medien/icons/mond.svg";
+        const sunIcon = "../medien/icons/sonne.svg";
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            modeText.textContent = "Tagmodus";
+            modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sonne" />`;
+        } else {
+            modeIcon.innerHTML = `<img src="${moonIcon}" alt="Mond" />`;
+        }
+
+        modeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                modeText.textContent = "Tagmodus";
+                modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sonne" />`;
+                localStorage.setItem("theme", "light");
+            } else {
+                modeText.textContent = "Nachtmodus";
+                modeIcon.innerHTML = `<img src="${moonIcon}" alt="Mond" />`;
+                localStorage.setItem("theme", "dark");
+            }
+        });
+		
+		function openCurtain() { document.getElementById("curtainMenu").style.width = "100%"; }
+        function closeCurtain() { document.getElementById("curtainMenu").style.width = "0%"; }
+
+		/* Tutorial angesehen */
+        const products = {
+          hoodie: {
+            title: "Infested Hoodie",
+            sizes: ["S", "M", "L", "XL"],
+            variants: {
+              "Schwarz": "../medien/bilder/black hoodie.png",
+              "Weiß": "../medien/bilder/white hoodie.png"
+            }
+          },
+          tshirt: {
+            title: "Infested T-Shirt",
+            sizes: ["S", "M", "L", "XL"],
+            variants: {
+              "Schwarz": "../medien/bilder/black shirt.png",
+              "Weiß": "../medien/bilder/white shirt.png"
+            }
+          },
+          mug: {
+            title: "Infested Tasse",
+            variants: {
+              "Schwarz mit Schrift": "../medien/bilder/Schwarze Tasse Schrift.png",
+              "Schwarz ohne Schrift": "../medien/bilder/Schwarze Tasse.png",
+              "Weiß mit Schrift": "../medien/bilder/Weiße Tasse Schrift.png",
+              "Weiß ohne Schrift": "../medien/bilder/Weiße Tasse.png"
+            }
+          },
+          keychain: {
+            title: "Infested Schlüsselanhänger",
+            variants: {
+              "Schwarz": "../medien/bilder/schlüsselanhänger.png",
+              "Weiß": "../medien/bilder/weißer schlüsselanhänger.png"
+            }
+          }
+        };
+
+        const modal = document.getElementById("buyModal");
+        const closeModal = document.querySelector(".close-modal");
+        const modalImage = document.getElementById("modalProductImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const variantOptions = document.getElementById("variantOptions");
+        const confirmBuy = document.getElementById("confirmBuy");
+
+        document.querySelectorAll(".buy-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const productKey = btn.getAttribute("data-product");
+            if (!productKey) return;
+
+            const product = products[productKey];
+            modalTitle.textContent = product.title;
+            variantOptions.innerHTML = "";
+
+            const variantLabel = document.createElement("label");
+            variantLabel.textContent = "Variante:";
+            const variantSelect = document.createElement("select");
+            variantSelect.id = "variantSelect";
+
+            Object.entries(product.variants).forEach(([name, img]) => {
+              const option = document.createElement("option");
+              option.value = name;
+              option.textContent = name;
+              variantSelect.appendChild(option);
+            });
+
+            variantOptions.appendChild(variantLabel);
+            variantOptions.appendChild(variantSelect);
+
+            if (product.sizes) {
+              const sizeLabel = document.createElement("label");
+              sizeLabel.textContent = "Größe:";
+              const sizeSelect = document.createElement("select");
+              sizeSelect.id = "sizeSelect";
+
+              product.sizes.forEach(size => {
+                const option = document.createElement("option");
+                option.value = size;
+                option.textContent = size;
+                sizeSelect.appendChild(option);
+              });
+
+              variantOptions.appendChild(sizeLabel);
+              variantOptions.appendChild(sizeSelect);
+            }
+
+            modalImage.src = Object.values(product.variants)[0];
+
+            variantSelect.addEventListener("change", () => {
+              modalImage.src = product.variants[variantSelect.value];
+            });
+
+            modal.style.display = "block";
+          });
+        });
+
+        closeModal.addEventListener("click", () => modal.style.display = "none");
+        window.addEventListener("click", e => { if (e.target === modal) modal.style.display = "none"; });
+
+        confirmBuy.addEventListener("click", () => {
+          const productName = modalTitle.textContent;
+          const variantSelect = document.getElementById("variantSelect");
+          const sizeSelect = document.getElementById("sizeSelect");
+          const variant = variantSelect ? variantSelect.value : "Standard";
+          const size = sizeSelect ? sizeSelect.value : "";
+          alert(`Du hast ${productName} (${variant}${size ? ", Größe " + size : ""}) gewählt!`);
+          modal.style.display = "none";
+        });
+    </script>
+</body>
+</html>

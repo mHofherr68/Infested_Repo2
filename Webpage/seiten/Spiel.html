@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFESTED - Spiel</title>
+    <link rel="icon" href="../medien/bilder/Infested Logo.svg">
+    <link rel="stylesheet" href="../gestalt/spiel_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Tutorial angesehen -->
+	<div id="curtainMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+        <div class="overlay-content">
+            <a href="Spiel.html">SPIEL</a>
+            <a href="Story.html">STORY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="News.html">NEWS</a>
+            <a href="Support.html">SUPPORT</a>
+        </div>
+    </div>
+	
+    <header>
+        <div class="header-text">
+            <h2 class="game-title">INFESTED</h2>
+            <h1>Bring dich in Sicherheit und repariere deine Flucht</h1>
+        </div>
+    </header>
+
+    <nav id="Hauptnavigation">
+        <a href="index.html" class="logo">
+            <img src="../medien/bilder/Infested Logo.svg" alt="Infested Logo">
+        </a>
+		<!-- Tutorial angesehen -->
+		<span class="menu-toggle" onclick="openCurtain()">&#9776;</span>
+		
+        <ul>
+            <li><a href="spiel.html">SPIEL</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+        </ul>
+        <div class="mode-toggle">
+            <span class="mode-text">Night Mode</span>
+            <div class="mode-switch">
+                <span class="mode-icon">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="download-section">
+            <h2>Download & Play</h2>
+            <p>Version 1.0 | Dateigröße: 350MB</p>
+            <div class="download-buttons-container">
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> Windows</a>
+                <a href="#" class="download-btn"><i class="fab fa-apple"></i> Mac</a>
+            </div>
+        </section>
+
+        <section class="requirements-section">
+            <h2>Systemanforderungen</h2>
+            <div class="requirements">
+                <div class="req-block">
+                    <h3>Mindestanforderungen</h3>
+                    <ul>
+                        <li>OS: Windows 10 / MacOS 10.15</li>
+                        <li>RAM: 4 GB</li>
+                        <li>Grafikkarte: NVIDIA GTX 660 / AMD Radeon HD 7870</li>
+                        <li>Speicher: 500 MB frei</li>
+                    </ul>
+                </div>
+                <div class="req-block">
+                    <h3>Empfohlene Anforderungen</h3>
+                    <ul>
+                        <li>OS: Windows 11 / MacOS 12</li>
+                        <li>RAM: 8 GB</li>
+                        <li>Grafikkarte: NVIDIA GTX 1060 / AMD Radeon RX 580</li>
+                        <li>Speicher: 1 GB frei</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <h2>Features im Game</h2>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>Insekten Spray Waffe</h3>
+                    <p>Benutze deine eigene hergestellte Waffe gegen deine Feinde!</p>
+                </div>
+                <div class="feature-image">
+                    <img src="../medien/bilder/waffe.jpg" alt="Waffe Screenshot">
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>KI Assistentin Layla</h3>
+                    <p>Du bist nicht alleine. Rede mit deiner eigenen KI Assistentin die einen speziellen Humor hat!</p>
+                </div>
+                <div class="feature-image">
+                    <img src="../medien/bilder/layla2.png" alt="Layla Screenshot">
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>Begrenzter Sauerstoff</h3>
+                    <p>In deiner Umgebung ist meist begrenzter Sauerstoff also hab immer deine Anzeige im Blick!</p>
+                </div>
+                <div class="feature-image">
+                    <img src="../medien/bilder/O2.jpg" alt="Sauerstoff Screenshot">
+                </div>
+            </div>
+        </section>
+
+        <section class="howtoplay-section">
+            <h2>Anleitung / How to Play</h2>
+            <ul>
+			<div class="feature-image">
+                <img src="../medien/bilder/Tastatur Belegung.jpg" alt="Multiplayer Screenshot">
+			</div>
+                <li>Tipps: Nutze Power-Ups clever und beobachte die Umgebung</li>
+                <li>FAQ: Häufige Fragen zum Spiel findest du <a href="Support.html">hier</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infested | <a href="Support.html">Impressum</a> | <a href="Support.html">Datenschutz</a></p>
+    </footer>
+
+    <script>
+		/* Tutorial angesehen */
+		const modeToggle = document.querySelector(".mode-toggle");
+		const modeText = document.querySelector(".mode-text");
+		const modeIcon = document.querySelector(".mode-icon");
+
+		const moonIcon = "../medien/icons/mond.svg";
+		const sunIcon = "../medien/icons/sonne.svg";
+
+		if (localStorage.getItem("theme") === "light") {
+			document.body.classList.add("light-mode");
+			modeText.textContent = "Day Mode";
+			modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+		} else {
+			modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+		}
+
+		modeToggle.addEventListener("click", () => {
+			document.body.classList.toggle("light-mode");
+
+			if (document.body.classList.contains("light-mode")) {
+				modeText.textContent = "Day Mode";
+				modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+				localStorage.setItem("theme", "light");
+			} else {
+				modeText.textContent = "Night Mode";
+				modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+				localStorage.setItem("theme", "dark");
+			}
+		});
+		
+		function openCurtain() { document.getElementById("curtainMenu").style.width = "100%"; }
+        function closeCurtain() { document.getElementById("curtainMenu").style.width = "0%"; }
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFESTED - News</title>
+    <link rel="icon" href="../medien/bilder/Infested Logo.svg">
+    <link rel="stylesheet" href="../gestalt/spiel_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="news-page">
+	<!-- Tutorial angesehen -->
+	<div id="curtainMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+        <div class="overlay-content">
+            <a href="Spiel.html">SPIEL</a>
+            <a href="Story.html">STORY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="News.html">NEWS</a>
+            <a href="Support.html">SUPPORT</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-text">
+            <h2 class="game-title">NEWS</h2>
+            <h1>Bleib auf dem Laufenden über Updates, Events und Community</h1>
+        </div>
+    </header>
+
+    <nav id="Hauptnavigation">
+        <a href="index.html" class="logo">
+            <img src="../medien/bilder/Infested Logo.svg" alt="Infested Logo">
+        </a>
+		<!-- Tutorial angesehen -->
+		<span class="menu-toggle" onclick="openCurtain()">&#9776;</span>
+		
+        <ul>
+            <li><a href="spiel.html">SPIEL</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+        </ul>
+        <div class="mode-toggle">
+            <span class="mode-text">Night Mode</span>
+            <div class="mode-switch">
+                <span class="mode-icon">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="feature-screenshots-section">
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h2>Kategorien</h2>
+                    <div class="news-categories">
+                        <button class="cat-btn">Alle News</button>
+                        <button class="cat-btn">Updates</button>
+                        <button class="cat-btn">Events</button>
+                        <button class="cat-btn">Community</button>
+                        <button class="cat-btn">Dev Blog</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <div class="feature-text">
+                <h2>Aktuelle News</h2>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="../medien/bilder/Gamepic2.png" alt="Update Bild">
+                    <div class="news-content">
+                        <h3>Großes Update 1.0</h3>
+                        <span class="news-date">05. September 2025</span>
+                        <p>Das erste große Content-Update bringt neue Missionen, Kreaturen und Verbesserungen ins Spiel.</p>
+                        <button class="read-btn">Mehr lesen</button>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../medien/bilder/mars.webp" alt="Event Bild">
+                    <div class="news-content">
+                        <h3>Community Event „Aurora-Exploration“</h3>
+                        <span class="news-date">28. August 2025</span>
+                        <p>Nimm teil am ersten globalen Event: Entdecke neue Easter-Eggs auf Aurora-9 und gewinne Preise!</p>
+                        <button class="read-btn">Mehr lesen</button>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../medien/bilder/Behind.jpg" alt="Dev Blog Bild">
+                    <div class="news-content">
+                        <h3>Behind the Scenes – Dev Blog</h3>
+                        <span class="news-date">15. August 2025</span>
+                        <p>Ein Einblick in die Entwicklung von Infested: Konzeptzeichnungen, Designentscheidungen und Story-Arcs.</p>
+                        <button class="read-btn">Mehr lesen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h2>Newsletter</h2>
+                    <p>Melde dich an und verpasse keine Updates mehr!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Deine E-Mail" required>
+                        <button type="submit" class="buy-btn">Anmelden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infested | <a href="Support.html">Impressum</a> | <a href="Support.html">Datenschutz</a></p>
+    </footer>
+
+    <script>
+		/* Tutorial angesehen */
+        const modeToggle = document.querySelector(".mode-toggle");
+        const modeText = document.querySelector(".mode-text");
+        const modeIcon = document.querySelector(".mode-icon");
+
+        const moonIcon = "../medien/icons/mond.svg";
+        const sunIcon = "../medien/icons/sonne.svg";
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            modeText.textContent = "Day Mode";
+            modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+        } else {
+            modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+        }
+
+        modeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                modeText.textContent = "Day Mode";
+                modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+                localStorage.setItem("theme", "light");
+            } else {
+                modeText.textContent = "Night Mode";
+                modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+                localStorage.setItem("theme", "dark");
+            }
+        });
+		
+		function openCurtain() { document.getElementById("curtainMenu").style.width = "100%"; }
+        function closeCurtain() { document.getElementById("curtainMenu").style.width = "0%"; }
+    </script>
+</body>
+</html>

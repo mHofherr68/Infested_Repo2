@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFESTED - Support</title>
+    <link rel="icon" href="../medien/bilder/Infested Logo.svg">
+    <link rel="stylesheet" href="../gestalt/spiel_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="support-page">
+	<!-- Tutorial angesehen -->
+	<div id="curtainMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCurtain()">&times;</a>
+        <div class="overlay-content">
+            <a href="Spiel.html">SPIEL</a>
+            <a href="Story.html">STORY</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="News.html">NEWS</a>
+            <a href="Support.html">SUPPORT</a>
+        </div>
+    </div>
+	
+    <header>
+        <div class="header-text">
+            <h2 class="game-title">SUPPORT</h2>
+            <h1>Wir helfen dir bei allen Fragen rund um INFESTED</h1>
+        </div>
+    </header>
+
+    <nav id="Hauptnavigation">
+        <a href="index.html" class="logo">
+            <img src="../medien/bilder/Infested Logo.svg" alt="Infested Logo">
+        </a>
+		<!-- Tutorial angesehen -->
+		<span class="menu-toggle" onclick="openCurtain()">&#9776;</span>
+		
+        <ul>
+            <li><a href="spiel.html">SPIEL</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+        </ul>
+        <div class="mode-toggle">
+            <span class="mode-text">Night Mode</span>
+            <div class="mode-switch">
+                <span class="mode-icon">🌙</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="feature-screenshots-section">
+            <h2>Häufige Fragen (FAQ)</h2>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>Wie installiere ich INFESTED?</h3>
+                    <p>Lade das Spiel im Shop herunter, folge den Installationsschritten und starte über den Launcher.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>Welche PC-Spezifikationen brauche ich?</h3>
+                    <p>Mindestens: Intel i5 / 8GB RAM / GTX 1050 / 20GB Speicherplatz.<br>
+                       Empfohlen: Intel i7 / 16GB RAM / RTX 3060 / SSD.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-text">
+                    <h3>Kann ich mein Savegame sichern?</h3>
+                    <p>Ja, Speicherstände findest du im Game bei Spielstand Laden <code>Dokumente/Infested/Saves</code>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <h2>Kontaktformular</h2>
+            <form class="contact-form feature-item" style="flex-direction: column; max-width: 600px; margin: auto;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="category">Kategorie</label>
+                <select id="category" name="category">
+                    <option value="technik">Technik</option>
+                    <option value="gameplay">Gameplay</option>
+                    <option value="shop">Shop</option>
+                    <option value="sonstiges">Sonstiges</option>
+                </select>
+
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="download-btn">Absenden</button>
+            </form>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <h2>Direkter Kontakt</h2>
+            <div class="feature-item">
+                <div class="feature-text">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-envelope"></i> E-Mail: support@infested-game.com</li>
+                        <li><i class="fab fa-discord"></i> <a href="#">Offizieller Discord-Server</a></li>
+                        <li><i class="fab fa-twitter"></i> <a href="#">Twitter Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-screenshots-section">
+            <h2>Community Support</h2>
+            <div class="feature-item">
+                <div class="feature-text">
+                    <p>Tausche dich mit anderen Spieler:innen aus und finde Lösungen:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infested | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    </footer>
+
+    <script>
+		/* Tutorial angesehen */
+        const modeToggle = document.querySelector(".mode-toggle");
+        const modeText = document.querySelector(".mode-text");
+        const modeIcon = document.querySelector(".mode-icon");
+
+        const moonIcon = "../medien/icons/mond.svg";
+        const sunIcon = "../medien/icons/sonne.svg";
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            modeText.textContent = "Day Mode";
+            modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+        } else {
+            modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+        }
+
+        modeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                modeText.textContent = "Day Mode";
+                modeIcon.innerHTML = `<img src="${sunIcon}" alt="Sun" />`;
+                localStorage.setItem("theme", "light");
+            } else {
+                modeText.textContent = "Night Mode";
+                modeIcon.innerHTML = `<img src="${moonIcon}" alt="Moon" />`;
+                localStorage.setItem("theme", "dark");
+            }
+        });
+		
+		function openCurtain() { document.getElementById("curtainMenu").style.width = "100%"; }
+        function closeCurtain() { document.getElementById("curtainMenu").style.width = "0%"; }
+    </script>
+</body>
+</html>
